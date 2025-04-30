@@ -1,0 +1,33 @@
+/* sadece mobilde gecerli olmasini istedigimiz seyler icin bunu kullanacagiz */
+
+/* TELEFONDA navbari sutun olarak yapacagiz */
+
+#navbar{
+    flex-direction: column;
+    /* bunu yaptik bu iki element h1 ve ul alt alta geldi yani column oldu */
+    padding: 0.5rem 0;
+
+    /* su anda ustune geldigimizde hover acik mavi renk tasma yapmakta bunu engellemek icin */
+    overflow: hidden;
+
+    /* telefonda height biraz daha fazla olsa daha guzel gorunur */
+    height: 80px;
+
+}
+
+#training .items{
+    display: flex;
+    flex-direction: column;
+    /* neden column yaptik cunku yan yana 3 tane sigmiyor ve cok sikisiyor */
+    
+}
+
+#training .items .item{
+    width: 100%;
+    /* teker teker gozukuyor olsa da yine sayfanin %33 unu kapliyor bu da cirkin bir goruntu onu da duzzeltmis olduk */
+}
+
+.courses .course{
+    display:flex;
+    flex-direction: column;
+}

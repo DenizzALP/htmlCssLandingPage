@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erda Deniz ALP | HTML CSS</title>
+    <meta name="keyword" content="HTML CSS">
+    <!--1 burda goruldugu gibi keyword olusturmus olduk -->
+    <meta name="description" content="Erda Deniz ALP | HTML CSS">
+
+    <!-- 4 fontumuzu ekliyoruz open sans olacak -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- 6 open sansi ekleyebilmek icin main cssin icine gidip ekleyebilmeyliyiz -->
+
+    <!-- 5 font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 7 artik bu sayede iconlarimiz da geldi -->
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- 2 linklerimizi gorundugu uzere burdan vermis olduk -->
+     <!-- 3 simdi tablet ve telefon linklerine media query ekleyecez ve istedigimiz pixelin altindayken caliscaklar -->
+    <link rel="stylesheet" media="(max-width:768px)" href="css/mobile.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="css/tablet.css">
+</head>
+<body>
+    <!-- 8 mustafa hoca bize ilk iskeleti olusturmayi ve sonra tasarlamayi oneriyor o yuzden simdi navbari olusturarak basliyoruz -->
+    <!-- 9 bu navbar da headerin icinde nav etiketi ile yapilacak -->
+    <header class="bg-dark-blue">
+        <!-- 11 ekledigimiz containere gore 100 px e kadar iki elementin arasi acilacak 1100 px ten sonra sayfada ortada durmaya baslayacaklar -->
+        <div class="container">
+            <nav id="navbar">
+                <!-- 10 iste burda h1 e direkt globalde yazdigimiz kucuk basliki veriyoruz ve karisik olmayan duzenli bir kodumuz oluyor -->
+                <h1 class="heading-small">Erda Deniz ALP</h1>
+                <ul>
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#training">Egitimler</a></li>
+                    <li><a href="#courses">Kurslar</a></li>
+                    <li><a href="#contact">Iletisim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+       <img  src="./ogeler/image/yakisikli.jpg" alt="Erda Deniz ALP"> 
+
+       <div class="name text-center">
+            <h2 class="heading-big">Erda Deniz ALP</h2>
+            <p>Computer Engineer | Founder Of Nothing </p>
+       </div>
+
+       <!-- 13 simdi bir buton koyacagiz ama bunun link olmasini istedigim icin a ile olusturup padd falan verecem -->
+        <a href="#courses" class="btn btn-primary">Kurslara Git</a>
+
+    </section>
+    <!-- 14 egitimler adinda bir section ve icinde olusacak itemler olan bir blok yaziyoruz -->
+    <section id="training" class="bg-dark-blue">
+        <!-- 15 arka plan rengini tek tek ayarlamadim globalden aldik ayni sekilde h3 te  de globalden aldik -->
+        <h3 class="text-center heading-medium">Egitimler</h3>
+        <div class="items">
+            <article class="item">
+                <i class="fa fa-pencil-alt"></i>
+                <h3>Sinif ici egitimler</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, accusantium?</p>
+            </article>
+            <article class="item">
+                <i class="fa fa-pencil-alt"></i>
+                <h3>Online icerikler</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, accusantium?</p>
+            </article>
+            <article class="item">
+                <i class="fa fa-pencil-alt"></i>
+                <h3>Konferanslar</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, accusantium?</p>
+            </article>
+        </div>
+    </section>
+    <!--17 biz burda position ozelligini kullanacaz o yuzden span kullaniyoruz simdilik  -->
+    <section id="courses">
+        <h3 class="text-center heading-medium">Kurslar</h3>
+        <div class="container">
+            <div class="courses">
+                <div class="course">
+                    <div class="course-image">
+                        <img src="./ogeler/image/python.jfif" alt="Python">
+                        <span> %90 indirim</span>
+                    </div>
+
+                    <div class="course-info">
+                        <div class="title">
+                            Komple Python Gelistrici Kursu
+                        </div>
+                        <div class="description">
+                            Komple Python Gelistrici Kursu | Sifirdan Python Ogrenin
+                        </div>
+                        <div class="instructor">
+                            Erda Deniz ALP, Nothing
+                        </div>
+                        <div class="rating">
+                            4.6 | 20000 Oylama
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="course">
+
+                    <div class="course-image">
+                        <img src="./ogeler/image/js.png" alt="JavaScript">
+                        <span> %90 indirim</span>
+                    </div>
+
+                    <div class="course-info">
+                        <div class="title">
+                            Komple Python Gelistrici Kursu
+                        </div>
+                        <div class="description">
+                            Komple Java Script Gelistrici Kursu | Sifirdan Java Script Ogrenin
+                        </div>
+                        <div class="instructor">
+                            Erda Deniz ALP, Nothing
+                        </div>
+                        <div class="rating">
+                            4.6 | 20000 Oylama
+                        </div>
+                        
+                    </div>
+                </div>    
+                <div class="course">    
+                    <div class="course-image">
+                        <img src="./ogeler/image/java.jpg" alt="Java">
+                        <span> %90 indirim</span>
+                    </div>
+
+                    <div class="course-info">
+                        <div class="title">
+                            Komple Python Gelistrici Kursu
+                        </div>
+                        <div class="description">
+                            Komple Java Gelistrici Kursu | Sifirdan Java Ogrenin
+                        </div>
+                        <div class="instructor">
+                            Erda Deniz ALP, Nothing
+                        </div>
+                        <div class="rating">
+                            4.6 | 20000 Oylama
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--18 artik burda footer ve iletsim kismini olusturacagiz  -->
+    <footer id="contact" class="bg-dark-blue">
+        <div class="contact-form">
+            <form>
+                <h4 class="text-center heading-medium">Bana Ulasin</h4>
+                <div class="form-group">
+                    <label for="name">Isim</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Isim">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Isim</label>
+                    <textarea name="message" id="message" class="form-control" rows="5" placeholder="Mesajiniz"></textarea>
+                </div>
+                <button type="submit" class="btn btn-block">Gonder</button>
+                <!-- 19 onceden olusturmus oldugumuz buton tasarimlarini kullandik -->
+            </form>
+            <!-- 20 simdi ul ve form div icindeki iki kardes oldu hizalamak adina onemli bi bilgi -->
+            <ul>
+                <!-- 21 burda sosyal medya hesaplarinin Ikonlarina link verip onlari listeliyoruz o yuzden li icinde a icinde i olur -->
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+
+            </ul>
+        </div>
+        <!-- 22 bu form kontrol ve form group baska yerlerde de kullanacagimiz global ozellikleri icerecekler o yuzden bunlar global csse yazacaz -->
+    </footer>
+</body>
+</html>
+<!-- 12 simdi navbari bitirdik biz bu bitirdigimiz navbari telefon ekranina gore de duzenleyecezssS -->
+ <!-- 16 simdi bunun stylesini main css den ayarliyoruz  -->

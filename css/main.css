@@ -1,0 +1,242 @@
+/* hep yaptigimiz global islemleri yapiyoruz */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* sayfada verecegimiz tum linkleri stilleyelim */
+a{
+ text-decoration: none;
+ color: #fff;
+}
+
+/* aldigimiz open sans fontu burdan eklemis olduk */
+html{
+    font-family: "Open Sans", sans-serif;
+}
+
+/* NAVBAR */
+
+#navbar{
+    color:#fff;
+    /* navbardaki elementlerin renklerini verdik ama bunlarin yan yana gelmesini de istiyoruz bunun icin de display flex kullanacaz */
+    display: flex;
+    /* simdi h1 bir item ul bir item navbarin icinde bu ikisinin altlarini saymadigimizda ikisi 1 item yani navbarda iki item var biz bunlarin aralarina bosluk nasil veriyorduk */
+    justify-content: space-between;
+
+    /* bunlari dikey hizada ortalamak istedigimizde hatirlarsan align items kullaniyorduk */
+    align-items: center;
+
+    /* dikkat edersek ul saga h1 sola yapisik su anda biz bunlari ayirmak adina bi padding verebiliriz tabiki */
+    padding: 0 0.75rem;
+    /* bastaki 0 ustten alttan 0 2. 0.75 soldan sagdan 0.75 demek  */
+
+    /* navbari biraz kucultmek icin */
+    height: 70px;
+}
+#navbar ul{
+    list-style-type: none;
+    /* noktalari kaldirmis olduk bu sayede */
+    
+    /* alt alta gozukuyorlar bu yuzden display flex verdik ve yan yana oldular */
+    display: flex;
+
+    /* dikey ortalamak icin ayni kodu kullandik */
+    align-items: center;
+
+}
+
+#navbar ul li a{
+    /* yukarda bunu display flex ile yan yana getirmistik ama aralari bitisikti bu sayede aralarini acmis oldum */
+    padding: 0.5rem;
+}
+/* su anda ul ler en saga h1 en saga dayanmis durumda bunu istewmiyorum bunun icin container olusturmam lazim ama bunu globalde yapiyorum */
+
+
+/* simdi a larin uzerine geldigimde bir background verecem onlara bunun icinde hover ozelligini kullanacaktik hatirlarsak */
+
+#navbar ul li a:hover{
+    background: #336ae2;
+    border-radius: 4px;
+}
+
+/* HOME SECTION */
+
+#home{
+    /* home id sini sectim */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid grey ;
+}
+
+#home img{
+    max-width: 100%;
+    
+    height: auto;
+    border-radius: 100%;
+}
+
+#home .name h2{
+    margin-bottom: 0.75rem;
+}
+#home .name p{
+    opacity: 0.6;
+    font-style: italic;
+}
+
+/* #home a {
+    margin-top: 1.25rem;
+    background: #336ea2;
+    padding: 0.8rem 3rem;
+    border-radius: 7px;
+    letter-spacing: 0.5px;
+}
+
+#home a:hover{
+    background: #fff;
+    color: #336ea2;
+    border: 2px solid #336ea2;
+} */
+/* simdi bu buton tasarimi guzel  oldu ve biz bunu sayfanin farkli noktalarinda da kullanmak isteyebiliriz bunu icin bunu globale tasiyalim */
+/*  o yuzden usttekileri yoruma aldim cunku index icindeki kisimdan bunlarin ayarlamasini yapacam */
+
+/* burda aralarinda guzelce bosluk olan her bir itemin sayfanin %33 unu kapladigi ve yan yana duran ve yan yana 3 tane itemin durabilecegi bir tasarim yapmis olduk */
+
+#training{
+    color: #fff;
+    padding: 1rem;
+}
+#training .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#training .items .item{
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#training .items .item:hover{
+    color: red;
+    opacity: 0.6;
+}
+
+/* ama bu tasarim mobilde bozuluyor simdi mobil kismini yapalim */
+
+/* simdi courses sectionuna basliyoruz */
+
+/* Courses */
+
+#courses{
+    /* dikkat et courses id li sectionu sectim */
+    color: #333;
+    pad: 1rem;
+}
+
+.courses{
+    /* dikkat et classi courses olan divi sectim */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.courses .course {
+    display: flex;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.courses .course .course-image{
+    margin-right: 0.5rem;
+    position: relative;
+    /* bu relativeyi vermemizin amaci bizim bu indirimi kapsayan divimizin resmin herhangi bir yerine konumlandirmak istememiz bunu yapmak icin kapsayicinin yani course image divinin 
+    relative olmasi gerekiyordu hatirlarsan bu sayede konum verebilecektik */
+
+}
+.courses .course .course-image img{
+    border-radius: 10px
+}
+
+.courses .course .course-image span{
+    background: red;
+    padding: 0.25rem;
+    color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    /* simdi bunu yaptik ve bu sayede bunu resmin kapsayicinin icine konumlandirabiliriz */
+    top:0;
+    left:0;
+}
+
+.courses .course .course-info .title{
+    letter-spacing: 1.2px;
+    font-weight: 700 ;
+    /*bu sayede bastaki titleyi biraz daha kalinlastirdik  */
+    margin-bottom: 0.25rem;
+
+}
+.courses .course .course-info .description{
+    letter-spacing: 1.2px;
+    margin-bottom: 0.25rem;
+    opacity: 0.6;
+    
+}
+.courses .course .course-info .instructor{
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+    opacity: 0.6;
+    
+}
+.courses .course .course-info .rating{
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+    opacity: 0.6;
+    
+}
+
+/* bunlari globalin icine almaya calisacagim dusun */
+
+/* contact */
+
+#contact{
+    color: #fff;
+    padding: 1rem;
+}
+
+#contact .contact-form{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+#contact .contact-form ul{
+    /* yandaki noktalar gitmeli */
+    list-style-type: none ;
+    /* yan yana gelmeliler */
+    display: flex;
+    /* yukariya cok yapisiklar */
+    margin-top: 1rem;
+    /* ortaya getirmek icin */
+    align-self: center;
+    /* neden yukardaki gibi items kullanmadik cunku onu kullaninca ikisini de ortalayacam diye widthi yok ediyor input daraliyor bu yuzden align self yani sade kendisini ortaladik */
+
+
+}
+
+#contact .contact-form ul li a{
+    /* bunlar iconlar linklerine etki eden kisim */
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+#contact .contact-form ul li a:hover{
+    opacity: 0.8;
+    /* uzerine geldigimizde biraz opaklasiyor guzel bir gorunum*/
+}

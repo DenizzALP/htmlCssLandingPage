@@ -26,3 +26,6 @@ project/ │ ├── index.html # Main HTML structure ├── css/ │ ├�
 1. Clone or download the repository.
 2. Open `index.html` in your browser.
 3. Customize the content, styles, or images as needed.
+4. 
+![landingPage](https://github.com/user-attachments/assets/9072fd32-1401-4169-95dc-c61afa01ab5b)
+![landingPage2](https://github.com/user-attachments/assets/c29db50f-8013-49d4-90e7-bac4c999fee2)

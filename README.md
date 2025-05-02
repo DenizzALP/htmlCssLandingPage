@@ -12,7 +12,17 @@ This is a simple and responsive personal portfolio project developed using **HTM
 - Font Awesome icons and Google Fonts integration
 
 ## 📁 Project Structure
-project/ │ ├── index.html # Main HTML structure ├── css/ │ ├── global.css # Global styles (shared across the site) │ ├── main.css # Desktop styles │ ├── mobile.css # Styles for devices under 768px │ └── tablet.css # Styles for devices under 500px └── ogeler/ └── image/ # Contains all images used
+```
+project/ 
+│ 
+├── index.html # Main HTML structure 
+├── css/ │ 
+├── global.css # Global styles (shared across the site) │ 
+├── main.css # Desktop styles │ 
+├── mobile.css # Styles for devices under 768px 
+│ 
+└── tablet.css # Styles for devices under 500px └── ogeler/ └── image/ # Contains all images used
+```
 
 ## 📚 Technologies Used
 
